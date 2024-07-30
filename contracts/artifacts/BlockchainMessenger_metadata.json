@@ -7,7 +7,12 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "getBalance",
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "changeCounter",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -20,7 +25,20 @@
 			},
 			{
 				"inputs": [],
-				"name": "myAddress",
+				"name": "message",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -34,12 +52,12 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_myAddress",
-						"type": "address"
+						"internalType": "string",
+						"name": "_newMessage",
+						"type": "string"
 					}
 				],
-				"name": "setMyAddress",
+				"name": "updateTheMessage",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -58,7 +76,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/ExampleAddress.sol": "ExampleAddress"
+			"contracts/ExampleMessenger.sol": "BlockchainMessenger"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -72,12 +90,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/ExampleAddress.sol": {
-			"keccak256": "0x6a8d0594292dfb44835403931362fc9a7ccdd187e88e3f7f703d5003e2acb98e",
+		"contracts/ExampleMessenger.sol": {
+			"keccak256": "0x6446002ffa383284768bfb4467f9d95aec520346cd15042aa9bca2d5450a208b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d61c7082777ee3b05ca3bb572ea7bc5eb16c2c965a93d1c644529e45223b9823",
-				"dweb:/ipfs/QmTnurdrmtHFGzQwHNrAUZ7CA7nQ8f8Q6RiP7BW7AQ9LEv"
+				"bzz-raw://19dc9ac20c883dc12ce5cc3fb649c7a8d8f8791d3441ae70a099b570eb49d1c9",
+				"dweb:/ipfs/QmPUPZPVDfGgWTuuJpscE5PFLKD6j2V172XAawCzHa2nkG"
 			]
 		}
 	},
